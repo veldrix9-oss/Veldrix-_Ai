@@ -1,0 +1,43 @@
+{
+  "name": "Veldrix-Ai",
+  "description": "Veldrix AI WhatsApp bot – fully automated with AI features",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "Veldrix-Ai",
+    "whatsapp-bot",
+    "AI",
+    "baileys"
+  ],
+  "website": "https://github.com/veldrix9-oss/Veldrix--bot#readme",
+  "repository": "https://github.com/veldrix9-oss/Veldrix--bot.git",
+  "logo": "https://files.catbox.moe/bkuj17.jpg",
+  "success_url": "/",
+  "env": {
+    "SESSION": {
+      "description": "Your WhatsApp session ID from scanner",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Your phone number with country code, no + or spaces",
+      "required": true
+    },
+    "DEVICE_MODE": {
+      "description": "Android or iPhone",
+      "value": "Android",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0",
+      "as": "DATABASE"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
