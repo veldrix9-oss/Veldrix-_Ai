@@ -24,9 +24,4 @@
     "Baileys",
     "Veldrix-Ai",
     "whatsapp",
-    "whatsapp-bot"
-  ],
-  "author": "Veldrix9-oss",
-  "license": "ISC",
-  "dependencies": { ... } // Keep exactly as before
-}
+    "whatsap
